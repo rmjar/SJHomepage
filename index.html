@@ -19,7 +19,14 @@
             background: url(./assets/health01.jpg);
             background-size: cover;
             background-position: top;
-            min-height: 1000px
+            min-height: 600px;
+        }
+
+        .header-content {
+            min-height: 600px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
         }
 
         .icon-svg {
@@ -38,9 +45,48 @@
             padding-left: 5px;
         }
 
+        .image-header-portrait {
+            object-fit: cover;
+            object-position: 50% 0;
+
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .materialize-text-justify {
+            text-align: justify;
+        }
+
+        p>strong,
+        a>strong,
+        li>strong,
+        div>strong {
+            font-weight: bold;
+        }
+
+        .line-break {
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+
+        .tabs .indicator {
+            background-color: #1565C0;
+        }
+
+        .tabs .tab a:focus,
+        .tabs .tab a:focus.active {
+            background: transparent;
+        }
+
         @media screen and (max-width: 670px) {
             header {
-                min-height: 500px;
+                min-height: 700px;
+            }
+        }
+
+        @media screen and (max-width: 440px) {
+            nav .brand-logo {
+                font-size: 1.8rem;
             }
         }
     </style>
@@ -53,93 +99,763 @@
         <div class="navbar-fixed">
             <nav id="nav" class="nav-wrapper blue">
                 <div class="container">
-                    <a href="" class="brand-logo">Sławomir Jagieła</a>
+                    <a href="#header" class="brand-logo">Sławomir Jagieła</a>
                     <a href="" class="sidenav-trigger" data-target="mobile-menu">
                         <i class="material-icons">menu</i>
                     </a>
                     <ul class="right hide-on-med-and-down">
-                        <li class="active"><a href="./index.html">Strona główna</a></li>
                         <li><a href="#about">O mnie</a></li>
                         <li><a href="#news">Aktualności</a></li>
                         <li><a href="#cooperation">Współpraca</a></li>
-                        <li><a href="./private.html">Prywatnie</a></li>
+                        <li><a href="#tabs">Kursy</a></li>
+                        <li><a href="#tabs">Publikacje</a></li>
                         <li><a href="#contact">Kontakt</a></li>
                     </ul>
-
                 </div>
             </nav>
         </div>
-        <ul class="sidenav blue lighten-4" id="mobile-menu">
-            <li class="active"><a href="./index.html">Strona główna</a></li>
+
+        <ul class="sidenav blue-grey lighten-4" id="mobile-menu">
             <li><a href="#about">O mnie</a></li>
             <li><a href="#news">Aktualności</a></li>
             <li><a href="#cooperation">Współpraca</a></li>
-            <li><a href="./private.html">Prywatnie</a></li>
+            <li><a href="#tabs">Kursy</a></li>
+            <li><a href="#tabs">Publikacje</a></li>
             <li><a href="#contact">Kontakt</a></li>
         </ul>
+
+
+        <div class="scrollspy" id="header">
+            <div class="container hide-on-small-only header-content">
+                <div class="row">
+                    <div class="valign-wrapper">
+                        <div class="col l6 m7 valign">
+                            <img class="image-header-portrait responsive-img materialboxed"
+                                src="./assets/portrait_color04.jpg" alt="">
+                        </div>
+                        <div class="col l6 m5 valign">
+                            <div class="card">
+                                <div class="card-content blue-grey-text text-darken-3">
+                                    <p class="materialize-text-justify">Kompetentny, skuteczny i zaangażowany
+                                        <strong>menedżer</strong>. Odpowiada za
+                                        wszystkie
+                                        kwestie <strong>administracyjne</strong>, <strong>ekonomiczne</strong>,
+                                        <strong>organizacyjne</strong>, <strong>sprzedażowe</strong> i
+                                        <strong>marketingowe</strong>. </p>
+                                    <p class="materialize-text-justify">Doświadczony <strong>menedżer w ochronie
+                                            zdrowia</strong>, praktyk w procesach
+                                        zarządzania podmiotami leczniczymi. Lubi i potrafi zarządzać zespołem,
+                                        <strong>jest
+                                            cenionym partnerem dla Zarządu</strong>, pracowników
+                                        oraz związków zawodowych. <strong>Konsekwentny w działaniu, stanowczy, potrafi
+                                            definiować jasne cele</strong>. Nastawiony zarówno na wynik, jak i na wysoką
+                                        jakość
+                                        usług oraz <strong>sukces</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container hide-on-med-and-up header-content">
+                <div class="row">
+                    <div class="col s12">
+                        <img class="image-header-portrait responsive-img materialboxed"
+                            src="./assets/portrait_color04.jpg" alt="">
+                    </div>
+                    <div class="col s12">
+                        <div class="card">
+                            <div class="card-content blue-grey-text text-darken-3">
+                                <p class="materialize-text-justify">Kompetentny, skuteczny i zaangażowany
+                                    <strong>menedżer</strong>. Odpowiada za
+                                    wszystkie
+                                    kwestie <strong>administracyjne</strong>, <strong>ekonomiczne</strong>,
+                                    <strong>organizacyjne</strong>, <strong>sprzedażowe</strong> i
+                                    <strong>marketingowe</strong>. </p>
+                                <p class="materialize-text-justify">Doświadczony <strong>menedżer w ochronie
+                                        zdrowia</strong>, praktyk w procesach
+                                    zarządzania podmiotami leczniczymi. Lubi i potrafi zarządzać zespołem, <strong>jest
+                                        cenionym partnerem dla Zarządu</strong>, pracowników
+                                    oraz związków zawodowych. <strong>Konsekwentny w działaniu, stanowczy, potrafi
+                                        definiować jasne cele</strong>. Nastawiony zarówno na wynik, jak i na wysoką
+                                    jakość
+                                    usług oraz <strong>sukces</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </header>
+
+
+
 
     <!-- about me-->
     <section class="container section scrollspy" id="about">
+        <h5 class="blue-text text-darken-3">O mnie</h5>
+        <p class="blue-grey-text text-darken-3 materialize-text-justify"><strong>Jestem menedżerem i ekspertem branży
+                ochrony zdrowia.</strong>
+            Otrzymałem nagrodę dla Menedżera Roku
+            w ochronie zdrowia nadawaną przez kapitułę „Menadżer Zdrowia”. Zostałem
+            odznaczony przez Ministra Zdrowia „Za zasługi dla ochrony zdrowia”, nagroda za racjonalizm i konsekwencję
+            w&nbsp;działaniu.</p>
 
-        <h5>O mnie</h5>
+        <p class="blue-grey-text text-darken-3  materialize-text-justify">Obecnie pełnię funkcję <strong>Dyrektora
+                Zarządzającego</strong> i
+            <strong>Dyrektora Kształcenia
+                Podyplomowego i MBA w Ochronie Zdrowia</strong> w <strong>Collegium Humanum Szkoła Główna
+                Menedżerska</strong>.</p>
 
+        <p>
+            <h6 class="blue-text text-darken-3">
+                Jestem absolwentem:
+            </h6>
+            <ul class="fa-ul blue-grey-text text-darken-3">
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>
+                    <strong>Uniwersytetu Warszawskiego</strong> studiów podyplomowych na <strong>Wydziale
+                        Zarządzania</strong>
+                <li>Zarządzanie w podmiotach leczniczych</li>
+                </li>
+
+
+
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>
+                    <strong>Uniwersytetu Warszawskiego</strong> studiów podyplomowych na <strong>Wydziale
+                        Ekonomicznym</strong>
+                <li>Zarządzanie ryzykiem w opiece zdrowotnej</li>
+                </li>
+
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>
+                    <strong>TÜV Nord Polska</strong> programu efektywnego zarządzania dla kadry menedżerskiej
+                <li>MBA Zarządzanie szpitalem</li>
+                </li>
+
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>
+                    <strong>Olympus Szkoły Wyższej</strong> studiów magisterskich na <strong>Wydziale
+                        Ekonomicznym</strong>
+                </li>
+
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>
+                    <strong>Uniwersytetu Technologiczno-Humanistycznego</strong> studiów licencjackich na
+                    <strong>Wydziale Ekonomicznym</strong>
+                </li>
+
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>
+                    <strong>Zespołu Szkół Medycznych</strong> w Radomiu na
+                    <strong>Wydziale Pielęgniarstwa</strong>
+                </li>
+            </ul>
+        </p>
+        <p class="blue-grey-text text-darken-3 materialize-text-justify">
+            Jestem wykładowcą akademickim, panelistą, prelegentem, autorem licznych opracowań naukowych z zakresu
+            systemu ochrony zdrowia. Posiadam eksperckie doświadczenie w zakresie funkcjonowania systemu ochrony
+            zdrowia, które zdobywałem między innymi w Centralnym Szpitalu Klinicznym MSWiA, Banku Gospodarstwa
+            Krajowego, Medicover, Centrum Medycznym Damiana. Jestem ekspertem wielu kluczowych debat i wydarzeń
+            specjalnych związanych z sektorem ochrony zdrowia.
+        </p>
     </section>
 
     <!--news-->
     <section class="container section scrollspy" id="news">
+        <h5 class="blue-text text-darken-3">Aktualności</h5>
 
-        <h5>Aktualności</h5>
+        <p>
+            <div class="blue-grey-text text-darken-3">Uruchomienie nowego unikalnego w skali całego kraju kierunku
+                <strong>Studiów DBA Zarządzanie w ochronie zdrowia</strong>.
+            </div>
+            <div>
+                <a href="https://www.humanum.pl" target="_blank" class="blue-text text-darken-3">
+                    Zapraszam do systematycznego zapoznawania się ze stroną internetową Collegium Humanum Szkoły
+                    Głównej Menedżerskiej.
+                </a>
+            </div>
+        </p>
+
+        <p>
+            <div class="blue-grey-text text-darken-3">
+                <div><strong>25.09.2019r.</strong></div>
+                <div><strong>Konferencja dot. zmian w prawie na rynku usług medycznych.</strong></div>
+                <div>Powołanie „Instytutu Zdrowia i Spraw Społecznych”</div>
+            </div>
+            <div class="blue-grey-text text-darken-3">
+                Projekt w trakcie realizacji.
+            </div>
+            <div>
+                <a href="https://www.humanum.pl" target="_blank" class="blue-text text-darken-3">
+                    Zapraszam do systematycznego zapoznawania się ze stroną internetową Collegium Humanum Szkoły
+                    Głównej Menedżerskiej.
+                </a>
+            </div>
+            <div>
+                <a href="http://www.pfsz.org" target="_blank" class="blue-text text-darken-3">
+                    Zapraszam do systematycznego zapoznawania się ze stroną internetową Polskiej Federacji Szpitali.
+                </a>
+            </div>
+        </p>
+
+        <p>
+            <a href="https://humanum.pl/uroczyste-zakonczenie-roku-akademickiego-2018-2019-oraz-graduacja-absolwentow-studiow-executive-mba"
+                target="_blank" class="blue-text text-darken-3">
+                <strong>Uroczyste zakończenie roku akademickiego 2018/2019 oraz graduacja absolwentów studiów Executive
+                    MBA</strong></a>
+        </p>
+
+        <p>
+            <a href="https://humanum.pl/miedzynarodowa-konferencja-naukowa-szanuje-nie-hejtuje" target="_blank"
+                class="blue-text text-darken-3">
+                <strong>Międzynarodowa Konferencja Naukowa "Szanuję, nie hejtuję. Hejt – aspekty prawne, psychologiczne,
+                    ekonomiczne i społeczne" 14-15.06.2019r.</strong></a>
+        </p>
+
+        <p>
+            <a href="https://humanum.pl/miedzynarodowa-konferencja-dydaktyka-i-zarzadzanie-uniwersytetem-w-federacji-rosyjskiej-polsce-bialorusi-ukrainie-i-uzbekistanie"
+                target="_blank" class="blue-text text-darken-3">
+                <strong>Międzynarodowa Konferencja "Dydaktyka i zarządzanie uniwersytetem w Federacji Rosyjskiej,
+                    Polsce, Białorusi, Ukrainie i Uzbekistanie" – 31.05.2019r.</strong></a>
+        </p>
+
+        <p>
+            <a href="https://humanum.pl/miedzynarodowa-konferencja-naukowa-zarzadzanie-sfera-publiczna-przez-administracje-w-dobie-przemian-spolecznych-i-gospodarczych"
+                target="_blank" class="blue-text text-darken-3">
+                <strong>Międzynarodowa Konferencja Naukowa “Zarządzanie sferą publiczną przez administrację w dobie
+                    przemian społecznych i gospodarczych”</strong></a>
+        </p>
+
+        <p>
+            <a href="http://www.nfz.gov.pl/aktualnosci/aktualnosci-centrali/na-pierwszym-miejscu-pacjent-i-jakosc-leczenia,7312.html"
+                target="_blank" class="blue-text text-darken-3">
+                <strong>"XX-lecie powszechnych ubezpieczeń zdrowotnych w Polsce" 18.03.2019r.</strong></a>
+        </p>
+
+        <p>
+            <div class="blue-grey-text text-darken-3"><strong>Centrum Dydaktyczne Warszawskiego Uniwersytetu
+                    Medycznego</strong></div>
+
+            <a href="https://wdpz.wum.edu.pl/sites/wdpz.wum.edu.pl/files/INFORMACJA-DLA-MEDI%C3%93W-IV-WDPZ.pdf"
+                target="_blank" class="blue-text text-darken-3">
+                <strong>IV Warszawskie Dni Promocji Zdrowia. Nowoczesny Pacjent - Świadomy, Samodzielny, Odpowiedzialny.
+                    10 lat Rzecznika Praw Pacjenta.</strong></a>
+        </p>
+
+
+        <p class="blue-grey-text text-darken-3">
+            <a href="https://humanum.pl/letnia-inauguracja-studiow-mba-dba-ll-m" target="_blank"
+                class="blue-text text-darken-3">
+                <strong>Letnia inauguracja studiów, MBA, DBA, LL.M</strong></a>
+        </p>
+
     </section>
 
     <!--cooperation-->
     <section class="container section scrollspy" id="cooperation">
-        <h5>Współpraca zawodowa</h5>
+        <h5 class="blue-text text-darken-3">Współpraca</h5>
+
+
+        <div class="carousel">
+            <a class="carousel-item" href="https://humanum.pl" target="_blank"><img src="assets/partners/CH.png"></a>
+            <a class="carousel-item" href="http://www.pfsz.org/" target="_blank"><img
+                    src="assets/partners/PFSZ.jpg"></a>
+            <a class="carousel-item" href="https://serwiszoz.pl/" target="_blank"><img
+                    src="assets/partners/SerwisZOZ.jpg"></a>
+            <a class="carousel-item" href="https://www.humanum.org.pl" target="_blank"><img
+                    src="assets/partners/HO.png"></a>
+            <a class="carousel-item" href="https://www.wip.pl" target="_blank"><img src="assets/partners/WiP.jpg"></a>
+            <a class="carousel-item" href="https://dgc.pl" target="_blank"><img src="assets/partners/DCG.jpg"></a>
+        </div>
+
+
+
+        <h5 class="blue-text text-darken-3">Współpraca zawodowa</h5>
+
+        <ul class="fa-ul blue-grey-text text-darken-3">
+
+            <li>
+                <span class="fa-li"><i class="fas fa-check-square"></i></span><strong>COLLEGIUM HUMANUM Szkoła Główna
+                    Menedżerska</strong>
+            <li>Dyrektor Zarządzający</li>
+            <li>Dyrektor Kształcenia Podyplomowego i MBA w Ochronie Zdrowia</li>
+            </li>
+
+            <li>
+                <span class="fa-li"><i class="fas fa-check-square"></i></span><strong>Samodzielny Zespół Publicznych
+                    Zakładów Lecznictwa Otwartego Warszawa-Ochota</strong>
+            <li>Dyrektor ds. Administracyjnych</li>
+            </li>
+
+            <li>
+                <span class="fa-li"><i class="fas fa-check-square"></i></span><strong>Zespół Przychodni
+                    Specjalistycznych "Prima" Sp. z o.o.</strong>
+            <li>Prezes Zarządu</li>
+            </li>
+
+            <li>
+                <span class="fa-li"><i class="fas fa-check-square"></i></span><strong>Powiatowe Centrum Medyczne w
+                    Grójcu Sp. z o.o.</strong>
+            <li>Prezes Zarządu</li>
+            </li>
+
+            <li>
+                <span class="fa-li"><i class="fas fa-check-square"></i></span><strong>Samodzielny Publiczny Zakład
+                    Opieki Zdrowotnej w Grójcu</strong>
+            <li>Likwidator</li>
+            </li>
+
+            <li>
+                <span class="fa-li"><i class="fas fa-check-square"></i></span><strong>Samodzielny Publiczny Zakład
+                    Opieki Zdrowotnej w Grójcu</strong>
+            <li>Dyrektor Naczelny</li>
+            </li>
+
+            <li>
+                <span class="fa-li"><i class="fas fa-check-square"></i></span><strong>Bank Gospodarstwa
+                    Krajowego</strong>
+            <li>Ekspert Sektora Medycznego</li>
+            <li>Analityk Sektora Medycznego</li>
+            </li>
+
+            <li>
+                <span class="fa-li"><i class="fas fa-check-square"></i></span><strong>Centrum Medyczne Osteomed Sp. z
+                    o.o.</strong> (obecnie) <strong>SYNEXUS Polska Sp. z o.o.</strong>
+            <li>Kierownik ds. Zarządzania</li>
+            </li>
+
+            <li>
+                <span class="fa-li"><i class="fas fa-check-square"></i></span><strong>Centrum Medyczne Damiana Sp. z
+                    o.o. / Medicover</strong>
+            <li>Koordynator ds. Zarządzania Siecią Medyczną</li>
+            </li>
+
+            <li>
+                <span class="fa-li"><i class="fas fa-check-square"></i></span><strong>Centralny Szpital Kliniczny MSWiA
+                    w Warszawie</strong>
+            <li>Główny Specjalista</li>
+            <li>Audytor Wewnętrzny</li>
+            </li>
+
+            <li>
+                <span class="fa-li"><i class="fas fa-check-square"></i></span><strong>Medicover</strong>
+            <li>Asystent ds. Archiwum</li>
+            </li>
+
+            <li>
+                <span class="fa-li"><i class="fas fa-check-square"></i></span><strong>Radomski Szpital Specjalistyczny
+                    im. T. Chałubińskiego</strong>
+            <li>Pielęgniarz</li>
+            </li>
+
+        </ul>
+    </section>
+
+
+    <div class="row scrollspy" id="tabs">
+        <div class="col s12 m12 l12">
+            <ul class="tabs">
+                <li class="tab col s6 m5 l6">
+                    <a href="#articles" class="blue-text text-darken-4">PUBLIKACJE</a>
+                </li>
+                <li class="tab col s6 m6 l6">
+                    <a href="#courses" class="blue-text text-darken-4">KURSY</a>
+                </li>
+
+            </ul>
+
+
+            <section class="container section scrollspy" id="courses">
+                <h5 class="blue-text text-darken-3">Kursy</h5>
+
+                <p class="blue-grey-text text-darken-3"> <strong>Systemy zarządzania i certyfikaty.</strong></p>
+                <ul class="fa-ul blue-grey-text text-darken-3">
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Zarządzanie projektami zgodny z
+                        metodyką
+                        PRINCE2®</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>SZJ ISO 9001:2015</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>SZJ Bezpieczeństwa Środowiskowego
+                        zgodny z
+                        normą 14001:2015</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>SZ Bezpieczeństwa i Higieny Pracy
+                        zgodny z
+                        normą OHSAS 18001:2007</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>SZ Bezpieczeństwem Informacji
+                        zgodny z
+                        normą ISO/IEC 27001:2013</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Poświadczenie bezpieczeństwa
+                        dostępu
+                        do
+                        informacji niejawnych, klauzula "zastrzeżone"</li>
+                </ul>
+
+                <p class="blue-grey-text text-darken-3"><strong>Ukończone liczne szkolenia w zakresie zarządzania w
+                        ochronie
+                        zdrowia
+                        m. in.:</strong></p>
+
+                <ul class="fa-ul blue-grey-text text-darken-3">
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Proponowane zmiany systemu ochrony
+                        zdrowia
+                        w Polsce.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>System bezpieczeństwa informacji
+                        wg
+                        normy
+                        ISO 27001 ze szczególnym uwzględnieniem
+                        odpowiedzialności użytkownika.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>System Zarządzania Zmianą.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Praktyczne zarządzanie projektami
+                        według
+                        metodyki PRINCE2®.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Finansowe Zamknięcie Roku w
+                        Podmiotach
+                        Leczniczych.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Wymagania normy ISO/IEC
+                        27011:2013.
+                    </li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Prawo zamówień publicznych
+                        uwzględniające
+                        aspekty zamówień w służbie zdrowia oraz
+                        zamówień informatycznych.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Audytor wewnętrzny zintegrowanego
+                        systemu
+                        zarządzania:</li>
+                    <ul>
+                        <li>Jakością ISO 9001:2015</li>
+                        <li>Środowiskiem ISO 14001:2015</li>
+                        <li>Bezpieczeństwem i Higieną Pracy OHSAS 18001:2007</li>
+                    </ul>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Zarządzanie podmiotami leczniczymi
+                        wobec
+                        aktualnych uwarunkowań prawnych i finansowych.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Finansowanie świadczeń
+                        zdrowotnych.
+                        Fundusze europejskie w ochronie zdrowia.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Ochrona i przetwarzanie danych
+                        osobowych
+                        oraz dokumentacji medycznej w podmiotach leczniczych –
+                        zagadnienia praktyczne.</li>
+                    <li>Obowiązki menedżerów podmiotów leczniczych jako administratorów danych.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Zmiany organizacyjne w podmiotach
+                        leczniczych – możliwości prawne i kompetencje
+                        społeczne.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Kontraktowanie wg nowych
+                        kryteriów.
+                        Budżetowanie i controlling w optymalizacji kosztów podmiotów leczniczych.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>System zarządzania środowiskowego
+                        zgodny z
+                        normą ISO 14001:2004.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Zasady funkcjonowania systemu
+                        ochrony
+                        zdrowia w Polsce.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Lider zarządzania w ochronie
+                        zdrowia.
+                    </li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Benchmarking podmiotów leczniczych
+                        w
+                        kontraktowaniu świadczeń zdrowotnych.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Najważniejsze regulacje prawne
+                        jednostek
+                        ochrony zdrowia, a ustawa o działalności leczniczej.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Audytor wewnętrzny Zintegrowanego
+                        Systemu
+                        Zarządzania, opartego na normie PN-EN 9001:2009, standardach akredytacyjnych jednostek ochrony
+                        zdrowia
+                        CMJ (Centrum Monitorowania Jakością) oraz zasadach systemu HACCP.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Analiza finansowa podmiotów
+                        leczniczych.
+                    </li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Warsztaty dla audytorów
+                        wewnętrznych
+                        systemu zarządzania jakością.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Interpretacja wymagań normy PN-EN
+                        ISO
+                        9001:2001.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Wykorzystanie Internetu w
+                        działalności
+                        marketingowej i promocyjnej zakładów opieki zdrowotnej.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Wybrane zagadnienia ustawy o
+                        rachunkowości
+                        oraz oceny finansowej systemu zarządzania jakością.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Menedżer Jakości SZJ ISO
+                        9001:2000.
+                    </li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Pełnomocnik Dyrektora ds. systemu
+                        zarządzania jakością w jednostkach ochrony zdrowia.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Audytor Jakości ISO 9001:2000.
+                    </li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Dokumentowanie systemu zarządzania
+                        jakością w placówkach ochrony zdrowia – Asystent Jakości.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>System zarządzania jakością w
+                        placówkach
+                        służby zdrowia wg wymagań normy ISO 9001:2000.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>System Zarządzania Jakością ISO
+                        9001:2000
+                        najlepszą drogą do lepszej jakości szpitali i przychodni.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Medycyna paliatywna.</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Opieka paliatywna.</li>
+                </ul>
+            </section>
+
+
+            <section class="container section scrollspy" id="articles">
+                <h5 class="blue-text text-darken-3">Publikacje</h5>
+
+                <div class="blue-grey-text text-darken-3">
+                    <p>
+                        <div>Wywiad: <strong>"Dobry menedżer potrafi przekonać do zmian"</strong></div>
+                        <div>Wiedza i Praktyka: Zarządzanie Placówką Medyczną</div>
+                    </p>
+
+                    <p>
+                        <div><strong>MBA w ochronie zdrowia w Warszawie – porównanie</strong></div>
+                        <div>Serwis Zarządzanie w Ochronie Zdrowia. Wiedza i Praktyka</div>
+                    </p>
+
+                    <p>
+                        <div><strong>Pielęgniarki - jak zatrzymać je w kraju</strong></div>
+                        <div>Serwis Zarządzanie w Ochronie Zdrowia. Wiedza i Praktyka</div>
+                    </p>
+
+                    <p>
+                        <div><strong>Szczepienie chłopców przeciw HPV – czy to dobre rozwiązanie</strong></div>
+                        <div>Serwis Zarządzanie w Ochronie Zdrowia. Wiedza i Praktyka</div>
+                    </p>
+
+                    <p>
+                        <div><strong>Pacjenci skarżą się na jakość opieki zdrowotnej</strong></div>
+                        <div>Serwis Zarządzanie w Ochronie Zdrowia. Wiedza i Praktyka</div>
+                    </p>
+
+                    <p>
+                        <div>Artykuł: <strong>Skargi pacjentów na jakość opieki zdrowotnej</strong></div>
+                        <div>Polityka Zdrowotna</div>
+                    </p>
+
+                    <p>
+                        <div>Artykuł: <strong>Komunikacja w procesie przekształceń w ochronie zdrowia</strong></div>
+                        <div>Healthcare+ Management Magazine</div>
+                    </p>
+
+                    <p>
+                        <div>Artykuł: <strong>Pierwszy krok do nieuniknionej reformy systemu ochrony zdrowia</strong>
+                        </div>
+                        <div>Medinfo</div>
+                    </p>
+
+                    <p>
+                        <div>Artykuł: <strong>Dla wspólnego dobra – współpraca organów założycielskich z podmiotami
+                                leczniczymi</strong></div>
+                        <div>Healthcare+ Management Magazine</div>
+                    </p>
+
+                    <p>
+                        <div>Opinia eksperta: <strong>Dobra praca – zarządzanie operacyjne</strong></div>
+                        <div>Healthcare+ Management Magazine</div>
+                    </p>
+
+                    <p>
+                        <div>Opinia eksperta: <strong>System ochrony zdrowia nie może być zbiorem kar i
+                                represji</strong>
+                        </div>
+                        <div>Serwis Kadry zarządzającej zakładami opieki zdrowotnej</div>
+                    </p>
+
+                    <p>
+                        <div><strong>Projekt zarządzania ryzykiem medycznym oraz medycznego zarządzania
+                                kryzysowego</strong></div>
+                        <div>Inter Partner Assistance Polska S.A. Spółka Grypy AXA </div>
+                    </p>
+
+                    <p>
+                        <div>Artykuł: <strong>Rozsądna granica – ryzyko przekute w sukces</strong></div>
+                        <div>Healthcare+ Management Magazine</div>
+                    </p>
+
+                    <p>
+                        <div>Artykuł: <strong>Przejrzyste relacje – współpraca ze związkami zawodowymi</strong></div>
+                        <div>Healthcare+ Management Magazine</div>
+                    </p>
+
+                    <p>
+                        <div>Artykuł: <strong>Systemy Zarządzania Jakością w zakładach opieki zdrowotnej</strong></div>
+                        <div>Wydawnictwo: Fakt</div>
+                    </p>
+
+                    <p>
+                        <div>Artykuł: <strong>Motywowanie pracowników</strong></div>
+                        <div>Wydawnictwo: Magazyn Pielęgniarki i Położnej</div>
+                    </p>
+
+                    <p>
+                        <div>Artykuł: <strong>Szanuj klienta swego – profesjonalna obsługa pacjenta w podmiotach
+                                leczniczych</strong></div>
+                        <div>Wydawnictwo: Magazyn Pielęgniarki i Położnej</div>
+                    </p>
+
+                    <p>
+                        <div>Artykuł: <strong>Jak i gdzie szukać pracy – poszukiwanie lepszego jutra</strong></div>
+                        <div>Wydawnictwo: Magazyn Pielęgniarki i Położnej</div>
+                    </p>
+
+                    <p>
+                        <div>Artykuł: <strong>Wynagradzanie pracowników</strong></div>
+                        <div>Wydawnictwo: Magazyn Pielęgniarki i Położnej</div>
+                    </p>
+
+                    <p>
+                        <div>Artykuł: <strong>Jak cię widzą tak cię zatrudniają</strong></div>
+                        <div>Wydawnictwo: Magazyn Pielęgniarki i Położnej</div>
+                    </p>
+
+                    <p>
+                        <div>Artykuł: <strong>Marketingowe podejście do pacjenta</strong></div>
+                        <div>Wydawnictwo: Magazyn Pielęgniarki i Położnej</div>
+                    </p>
+
+                    <p>
+                        <div>Artykuł: <strong>Zarządzanie usługami medycznymi w publicznych i niepublicznych podmiotach
+                                leczniczych</strong></div>
+                        <div>Wydawnictwo: Magazyn Pielęgniarki i Położnej</div>
+                    </p>
+
+                    <p>
+                        <div>Skrypt: <strong>Zarządzanie Systemami Jakości w zakładach opieki zdrowotnej</strong>
+                            przygotowany
+                            na <strong>szkolenie wyższej kadry zarządzającej w Ministerstwie Zdrowia i Opieki
+                                Społecznej</strong></div>
+                        <div>Instytut Organizacji i Zarządzania</div>
+                    </p>
+
+                    <p>
+                        <div>Ekspertyza: <strong>Opracowanie koncepcji i założeń programowych, służących wprowadzeniu w
+                                firmie
+                                systemu motywacyjnego</strong></div>
+                        <div>Ruch S.A.</div>
+                    </p>
+
+                    <p>
+                        <div>Ekspertyza: <strong>Opracowanie systemu realizacji polityki szkoleniowej i rozwoju
+                                zawodowego
+                                pracowników firmy</strong></div>
+                        <div>Ruch S.A.</div>
+                    </p>
+
+                    <p>
+                        <div>Ekspertyza: <strong>Opracowanie materiałów będących podstawą do dokonania prezentacji oraz
+                                przeprowadzenie szkolenia odnośnie systemów motywacyjnych</strong></div>
+                        <div>Ruch S.A.</div>
+                    </p>
+
+                    <p>
+                        <div><strong>Strategia i plan marketingowy Centralnego Szpitala Klinicznego MSWiA w Warszawie na
+                                lata
+                                2006 – 2010</strong></div>
+                        <div>CSK MSWiA w Warszawie</div>
+                    </p>
+
+                    <p>
+                        <div><strong>Ocena sytuacji ekonomicznej rynku usług medycznych oraz prognozy rozwoju rynku
+                                usług
+                                medycznych w Polsce na lata 2008 – 2011</strong></div>
+                        <div>CSK MSWiA w Warszawie</div>
+                    </p>
+
+                    <p>
+                        <div><strong>Opracowanie i przygotowanie planu zarządzania strategicznego Centrum Medycznego
+                                Osteomed</strong></div>
+                        <div>Centrum Medyczne Osteomed Sp. z o.o. / SYNEXUS Polska Sp. z o.o.</div>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <section class="container section scrollspy" id="contact">
+        <h5 class="blue-text text-darken-3">Dane kontaktowe</h5>
+
+        <p><strong>Sławomir Jagieła</strong></p>
+        <p> <span class="btn-floating btn-small blue darken-2 white-text"><i class="material-icons">email</i></span>
+            <a href="mailto:slawomir.jagiela@gmail.com">
+                <span class="blue-grey-text text-darken-3">slawomir.jagiela@gmail.com</span></a>
+        </p>
+
+        <p> <span class="btn-floating btn-small blue darken-2 white-text"><i class="material-icons">email</i></span>
+            <a href="mailto:slawomir.jagiela@humanum.pl">
+                <span class="blue-grey-text text-darken-3">slawomir.jagiela@humanum.pl</span></a>
+        </p>
+
+        <p> <span class="btn-floating btn-small blue darken-2 white-text"><i
+                    class="material-icons">phone_android</i></span>
+            <span class="blue-grey-text text-darken-3"> +48 511 424 424</span>
+        </p>
+
+        <p class="line-break"></p>
+        <div class="blue-grey-text text-darken-3">
+            <div><strong>COLLEGIUM HUMANUM</strong></div>
+            <div>Szkoła Główna Menedżerska</div>
+            <div>Instytut Zdrowia i Spraw Społecznych</div>
+            <p></p>
+            <div>ul. Moniuszki 1A</div>
+            <div>00-014 Warszawa</div>
+            <div>woj. mazowieckie</div>
+            <div>Polska</div>
+        </div>
+
+        <p> <span class="btn-floating btn-small blue darken-2 white-text"><i class="material-icons">email</i></span>
+            <a href="mailto:iziss@humanum.pl">
+                <span class="blue-grey-text text-darken-3">iziss@humanum.pl</span></a>
+        </p>
+
     </section>
 
 
 
+
     <footer class="page-footer blue scrollspy">
-        <div class="container row" id="contact">
-            <div class="col s12 l6">
+        <div class="container row scrollspy">
+            <div class="col s11 l6">
                 <ul class="list-inline">
-                    <li><a href="https://www.linkedin.com" target="_blank"
+                    <li><a href="https://www.linkedin.com/in/sławomirjagiela/" target="_blank"
                             class="tooltipped btn-floating btn-small blue darken-2" data-tooltip="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a></li>
 
-                    <li><a href="https://www.goldenline.pl" target="_blank"
-                            class="tooltipped btn-floating btn-small blue darken-2 white-text"
-                            data-tooltip="Goldenline">
-                            <img src="./assets/golden.svg" class="icon-svg" alt="">
-                        </a></li>
-
-
-                    <li><a href="mailto:slawomir.jagiela@gmail.com"
-                            class="tooltipped btn-floating btn-small blue darken-2 white-text" data-tooltip="E-mail">
-                            <i class="material-icons">email</i>
-                        </a></li>
-
-                    <li><a href="https://www.instagram.com" target="_blank"
-                            class="tooltipped btn-floating btn-small blue darken-2" data-tooltip="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a></li>
-
-                    <li><a href="https://www.facebook.com" target="_blank"
+                    <li><a href="https://www.facebook.com/slawomir.jagiela" target="_blank"
                             class="tooltipped btn-floating btn-small blue darken-2" data-tooltip="Facebook">
                             <i class="fab fa-facebook"></i>
                         </a></li>
 
-                    <li><a href="https://www.twitter.com" target="_blank"
+                    <li><a href="https://twitter.com/jagielaslawomir" target="_blank"
                             class="tooltipped btn-floating btn-small blue darken-2" data-tooltip="Twitter">
                             <i class="fab fa-twitter"></i>
                         </a></li>
+
+                    <li><a href="https://instagram.com/slawomir.jagiela" target="_blank"
+                            class="tooltipped btn-floating btn-small blue darken-2" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a></li>
+
+                    <li><a href="https://www.goldenline.pl/slawomir-jagiela/" target="_blank"
+                            class="tooltipped btn-floating btn-small blue darken-2 white-text"
+                            data-tooltip="Goldenline">
+                            <img src="./assets/golden.svg" class="icon-svg" alt="">
+                        </a></li>
                 </ul>
             </div>
-            <div class="container row">
-                <div class="col s12 l12 center">
-                    <span>&copy; 2019 MR</span>
-                </div>
+            <div class="col l1 offset-l5 s1">
+                <ul class="list-inline">
+                    <li><a href="mailto:slawomir.jagiela@gmail.com"
+                            class="tooltipped btn-floating btn-small blue darken-2 white-text" data-tooltip="E-mail">
+                            <i class="material-icons">email</i>
+                        </a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="container row">
+            <div class="col s12 l12 center">
+                <a href="mailto:rozanski.michal.mr@gmail.com" class="white-text text-lighten-4"><span>&copy; 2019
+                        MR</span>
+                </a>
             </div>
         </div>
     </footer>
@@ -154,8 +870,17 @@
                 enterDelay: 500,
                 inDuration: 600,
             });
+            $('.carousel').carousel({
+                duration: 200,
+                numVisible: 6,
+                dist: -30,
+                shift: 20,
+                padding: 30,
+            });
+            $('.tabs').tabs();
             $('.scrollspy').scrollSpy();
             $('#about').scrollSpy();
+            $('.materialboxed').materialbox();
         })
     </script>
 </body>
