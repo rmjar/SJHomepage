@@ -1,0 +1,79 @@
+#header {
+    background: url(./assets/health01.jpg);
+    background-size: cover;
+    background-position: top;
+    min-height: 600px;
+}
+
+.header-content {
+    min-height: 600px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-svg {
+    height: 20px;
+    margin: 6px;
+}
+
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+}
+
+.list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.image-header-portrait {
+    object-fit: cover;
+    object-position: 50% 0;
+
+    width: 100%;
+    max-width: 500px;
+}
+
+.image-column-deco {
+    height: 100%;
+    width: max-content;
+}
+
+.materialize-text-justify {
+    text-align: justify;
+}
+
+p>strong,
+a>strong,
+li>strong,
+div>strong {
+    font-weight: bold;
+}
+
+.line-break {
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.tabs .indicator {
+    background-color: #1565C0;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+    background: transparent;
+}
+
+@media screen and (max-width: 670px) {
+    #header {
+        min-height: 700px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    nav .brand-logo {
+        font-size: 1.8rem;
+    }
+}
