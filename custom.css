@@ -52,6 +52,25 @@ div>strong {
     font-weight: bold;
 }
 
+div.card-content {
+    min-height: 8rem;
+}
+
+.cards-container {
+    -webkit-column-break-inside: avoid;
+    /* Chrome, Safari, Opera */
+    page-break-inside: avoid;
+    /* Firefox */
+    break-inside: avoid-column;
+    /* IE 10+ */
+
+}
+
+.cards-container .card {
+    display: inline-block;
+    overflow: visible;
+}
+
 .line-break {
     margin-top: 20px;
     padding-top: 20px;
@@ -75,5 +94,11 @@ div>strong {
 @media screen and (max-width: 440px) {
     nav .brand-logo {
         font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .cards-container {
+        column-count: 3;
     }
 }
