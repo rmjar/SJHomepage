@@ -56,20 +56,20 @@ div.card-content {
     min-height: 8rem;
 }
 
-.cards-container {
+/* .cards-container {
     -webkit-column-break-inside: avoid;
-    /* Chrome, Safari, Opera */
+    Chrome, Safari, Opera
     page-break-inside: avoid;
-    /* Firefox */
+    Firefox
     break-inside: avoid-column;
-    /* IE 10+ */
+    IE 10+
 
 }
 
 .cards-container .card {
     display: inline-block;
     overflow: visible;
-}
+} */
 
 .line-break {
     margin-top: 20px;
@@ -97,8 +97,8 @@ div.card-content {
     }
 }
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
     .cards-container {
-        column-count: 3;
+        column-count: 1;
     }
-}
+} */
