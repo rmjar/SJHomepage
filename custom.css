@@ -45,6 +45,10 @@
     text-align: justify;
 }
 
+.materialize-card-title {
+    font-size: 1.1rem !important;
+}
+
 p>strong,
 a>strong,
 li>strong,
