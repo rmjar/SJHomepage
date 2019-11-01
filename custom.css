@@ -95,6 +95,21 @@ div.card-content {
     background: #bbdefb ;
 }
 
+.cards-row-flex {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: stretch;
+}
+.cards-col-flex {
+    display:flex;
+}
+
+.cards-element-flex {
+    align-self: flex-start;
+}
+
 @media screen and (max-width: 670px) {
     #header {
         min-height: 700px;
