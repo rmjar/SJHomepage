@@ -60,6 +60,16 @@ div.card-content {
     min-height: 8rem;
 }
 
+.card-content>p {
+    padding: 1em;
+    text-align: justify;
+}
+
+.card-image-padded {
+    padding-left: 2em;
+    padding-top:2em;
+}
+
 /* .cards-container {
     -webkit-column-break-inside: avoid;
     Chrome, Safari, Opera
