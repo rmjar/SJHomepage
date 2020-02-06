@@ -1,0 +1,11 @@
+                <!-- <li><span class="fa-li"><i class="fas fa-check-square"></i></span>
+                    <strong>Collegium Humanum Szkoły Głównej Menedżerskiej</strong> i Apsley Business School w Londynie
+                <li>Executive Master of Business Administration (MBA) Zarządzania w ochronie zdrowia</li>
+                <li><strong>Posiadam uprawnienia do zasiadania w radach nadzorczych spółek z udziałem skarbu
+                        państwa</strong></li>
+                </li>
+
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>
+                    <strong>Collegium Humanum Szkoły Głównej Menedżerskiej</strong> studiów podyplomowych
+                <li>Zdrowie Publiczne</li>
+                </li> -->
