@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -313,10 +316,12 @@
                 <div class="modal-content">
                     <p>
                         To był dla mnie ogromny zaszczyt, wręczyć powołanie na Przewodniczącego Rady Programowej
-                        Instytutu Systemu Ochrony Zdrowia 
-                        <a href="https://www.facebook.com/AEHWarsaw/?__tn__=K-R&eid=ARDaI1hvbw12D-hbuCJ12tFo8VwwX8-n1WEZdSKjhS-Deuqc1zqXMFr5S2hCSglHXqFUXkQvJUhb4J0y&fref=mentions&__xts__%5B0%5D=68.ARCIxtW0bNeWBpXCRtcXkwN-aniVK0z9dtOq80hWFBILwrfRNWq8w-eVVbKxNFyOIYXCgmPvqswYaKSl0JUc6hPClyaWO0xlIdTJrdN7YtTh6tJZqfILnPB4pz-wlmnetMkIwRPIMbur3Im9m7KhmauRPeW8jT91r_VvzYCJwxtzZwqQTJifCfk1eoBqFB3yBwUqywN6DPKhwhGlgdu5CR07MWji21RLvCKGY7epPPtOZWTUcfxC_AtJlWSL71V7NYWcTByH6Ii0fbkFDGzIygQsInSZX1j3zWNXXi4i-xvDefEU_gn9ackJv81ooaiPqDIuZHjWxjLuqP5rguhxJAKp_g" target="_blank">Akademia Ekonomiczno-Humanistyczna w Warszawie</a>, 
-                        Panu Dyrektorowi Instytutu Centrum Zdrowia Matki Polki 
-                        <a href="https://www.facebook.com/maciej.banach?__tn__=K-R&eid=ARA9Z4fcOL1_lrnmaLNslTfOs0Ec49iil-U1CY_9I5dQp6q2n_1Pxt_qF8RLitpr-rYak-raKuMCrFeg&fref=mentions&__xts__%5B0%5D=68.ARCIxtW0bNeWBpXCRtcXkwN-aniVK0z9dtOq80hWFBILwrfRNWq8w-eVVbKxNFyOIYXCgmPvqswYaKSl0JUc6hPClyaWO0xlIdTJrdN7YtTh6tJZqfILnPB4pz-wlmnetMkIwRPIMbur3Im9m7KhmauRPeW8jT91r_VvzYCJwxtzZwqQTJifCfk1eoBqFB3yBwUqywN6DPKhwhGlgdu5CR07MWji21RLvCKGY7epPPtOZWTUcfxC_AtJlWSL71V7NYWcTByH6Ii0fbkFDGzIygQsInSZX1j3zWNXXi4i-xvDefEU_gn9ackJv81ooaiPqDIuZHjWxjLuqP5rguhxJAKp_g" target="_blank">
+                        Instytutu Systemu Ochrony Zdrowia
+                        <a href="https://www.facebook.com/AEHWarsaw/?__tn__=K-R&eid=ARDaI1hvbw12D-hbuCJ12tFo8VwwX8-n1WEZdSKjhS-Deuqc1zqXMFr5S2hCSglHXqFUXkQvJUhb4J0y&fref=mentions&__xts__%5B0%5D=68.ARCIxtW0bNeWBpXCRtcXkwN-aniVK0z9dtOq80hWFBILwrfRNWq8w-eVVbKxNFyOIYXCgmPvqswYaKSl0JUc6hPClyaWO0xlIdTJrdN7YtTh6tJZqfILnPB4pz-wlmnetMkIwRPIMbur3Im9m7KhmauRPeW8jT91r_VvzYCJwxtzZwqQTJifCfk1eoBqFB3yBwUqywN6DPKhwhGlgdu5CR07MWji21RLvCKGY7epPPtOZWTUcfxC_AtJlWSL71V7NYWcTByH6Ii0fbkFDGzIygQsInSZX1j3zWNXXi4i-xvDefEU_gn9ackJv81ooaiPqDIuZHjWxjLuqP5rguhxJAKp_g"
+                            target="_blank">Akademia Ekonomiczno-Humanistyczna w Warszawie</a>,
+                        Panu Dyrektorowi Instytutu Centrum Zdrowia Matki Polki
+                        <a href="https://www.facebook.com/maciej.banach?__tn__=K-R&eid=ARA9Z4fcOL1_lrnmaLNslTfOs0Ec49iil-U1CY_9I5dQp6q2n_1Pxt_qF8RLitpr-rYak-raKuMCrFeg&fref=mentions&__xts__%5B0%5D=68.ARCIxtW0bNeWBpXCRtcXkwN-aniVK0z9dtOq80hWFBILwrfRNWq8w-eVVbKxNFyOIYXCgmPvqswYaKSl0JUc6hPClyaWO0xlIdTJrdN7YtTh6tJZqfILnPB4pz-wlmnetMkIwRPIMbur3Im9m7KhmauRPeW8jT91r_VvzYCJwxtzZwqQTJifCfk1eoBqFB3yBwUqywN6DPKhwhGlgdu5CR07MWji21RLvCKGY7epPPtOZWTUcfxC_AtJlWSL71V7NYWcTByH6Ii0fbkFDGzIygQsInSZX1j3zWNXXi4i-xvDefEU_gn9ackJv81ooaiPqDIuZHjWxjLuqP5rguhxJAKp_g"
+                            target="_blank">
                             prof. Maciejowi Banachowi</a>
                     </p>
                 </div>
@@ -2757,9 +2762,6 @@
             </div>
         </div>
     </footer>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         $(document).ready(function () {
             $('.sidenav').sidenav();
